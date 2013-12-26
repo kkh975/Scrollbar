@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="utf-8">
+<head>
+	<title>BaseScrollbar</title>
+	<meta name="Author" content="Koo Chi Hoon(kkh975@naver.com)">
+	<meta name="keywords" content="BaseScrollbar" />
+	<meta name="keywords" content="This is Javascript or jQuery Function." />
+	<meta http-equiv="Cashe-Control" content="no-cache" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lte IE 8]><script type="text/javascript" src="js/modernizr 2.6.2.custom.min.js"></script><!--<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/BaseScrollbar.v0.1.dev.js"></script>
+</head>
+<body>
+	<header class="wrap-header">
+		<h1>BaseScrollbar</h1>
+		<p class="nth-1">웹브라우저에서 사용되는 스크롤바입니다. 기본에 최대한 충실히 제작되었습니다. </p>
+		<p class="nth-2">(IE7 브라우저까지 테스트)
+			<img src="images/ie.gif" alt="" />
+			<img src="images/chrome.gif" alt="" />
+			<img src="images/firefox.gif" alt="" />
+			<img src="images/safari.gif" alt="" />
+		</p>		
+		<a class="to-en" href="index.html"><img src="images/us.png" alt="to english" /></a>
+		<a class="to-kr" href="index-kr.html"><img src="images/kr.png" alt="to korean" /></a>
+	</header>
+
+	<main>
+
+		<!-- example -->
+		<div class="ex wrap">
+			<header>
+				<h1>Example</h1>
+			</header>
+
+			<!-- Vertical -->
+			<section class="section-1">
+				<header>
+					<h1>Vertical</h1>
+					<h2>status: <span class="ststus-display"></span></h2>
+				</header>
+
+				<section class="scrollbar-1">
+					<div class="scrollbar-1-viewport">
+						<div class="scrollbar-1-contents">
+							<h3>Magnis dis parturient montes</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae velit at velit pretium sodales. Maecenas egestas imperdiet mauris, vel elementum turpis iaculis eu. Duis egestas augue quis ante ornare eu tincidunt magna interdum. Vestibulum posuere risus non ipsum sollicitudin quis viverra ante feugiat. Pellentesque non faucibus lorem. Nunc tincidunt diam nec risus ornare quis porttitor enim pretium. Ut adipiscing tempor massa, a ullamcorper massa bibendum at. Suspendisse potenti. In vestibulum enim orci, nec consequat turpis. Suspendisse sit amet tellus a quam volutpat porta. Mauris ornare augue ut diam tincidunt elementum. Vivamus commodo dapibus est, a gravida lorem pharetra eu. Maecenas ultrices cursus tellus sed congue. Cras nec nulla erat.</p>
+
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget mauris libero. Nulla sit amet felis in sem posuere laoreet ut quis elit. Aenean mauris massa, pretium non bibendum eget, elementum sed nibh. Nulla ac felis et purus adipiscing rutrum. Pellentesque a bibendum sapien. Vivamus erat quam, gravida sed ultricies ac, scelerisque sed velit. Integer mollis urna sit amet ligula aliquam ac sodales arcu euismod. Fusce fermentum augue in nulla cursus non fermentum lorem semper. Quisque eu auctor lacus. Donec justo justo, mollis vel tempor vitae, consequat eget velit.</p>
+
+							<p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+
+							<h3>Adipiscing risus </h3>
+							<p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+
+							<p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+
+							<p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+
+							<h3>Adipiscing risus </h3>
+							<p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+
+							<p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+						</div>
+					</div>
+				</section>
+
+				<script type="text/javascript">
+					$( '.scrollbar-1' ).scrollbar( {
+						$viewport: $( '.scrollbar-1-viewport' ),
+						$contents: $( '.scrollbar-1-contents' ),
+						customClass: 'scrollbar-1',
+						create: function( ) {
+							$( '.section-1 span.ststus-display' ).text( 'create' );
+						},
+						active: function( ) {
+							$( '.section-1 span.ststus-display' ).text( 'scroll' );
+						},
+						update: function( ) {
+							$( '.section-1 span.ststus-display' ).text( 'update' );
+						}
+					} );
+
+					// contents update
+					setTimeout( function( ) {
+						var $e = $( '<p>add contents!</p>' ),
+							len = 10,
+							i = 0;
+
+						// make contents
+						for ( i = 0; i < len; i++ ) {
+							$( '.scrollbar-1-contents' ).append( $e.clone( ) );
+						}
+
+						$( '.scrollbar-1' ).scrollbar2update( );
+					}, 5 * 1000 );
+				</script>
+			</section>
+
+			<!-- Horizontal -->
+			<section class="section-2">
+				<header>
+					<h1>Horizontal</h1>
+					<h2>status: <span class="ststus-display"></span></h2>
+				</header>
+
+				<div class="scrollbar-2">
+					<div class="scrollbar-2-viewport">
+						<div class="scrollbar-2-contents">
+							<h3>Magnis dis parturient montes</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae velit at velit pretium sodales. Maecenas egestas imperdiet mauris, vel elementum turpis iaculis eu. Duis egestas augue quis ante ornare eu tincidunt magna interdum. Vestibulum posuere risus non ipsum sollicitudin quis viverra ante feugiat. Pellentesque non faucibus lorem. Nunc tincidunt diam nec risus ornare quis porttitor enim pretium. Ut adipiscing tempor massa, a ullamcorper massa bibendum at. Suspendisse potenti. In vestibulum enim orci, nec consequat turpis. Suspendisse sit amet tellus a quam volutpat porta. Mauris ornare augue ut diam tincidunt elementum. Vivamus commodo dapibus est, a gravida lorem pharetra eu. Maecenas ultrices cursus tellus sed congue. Cras nec nulla erat.</p>
+
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget mauris libero. Nulla sit amet felis in sem posuere laoreet ut quis elit. Aenean mauris massa, pretium non bibendum eget, elementum sed nibh. Nulla ac felis et purus adipiscing rutrum. Pellentesque a bibendum sapien. Vivamus erat quam, gravida sed ultricies ac, scelerisque sed velit. Integer mollis urna sit amet ligula aliquam ac sodales arcu euismod. Fusce fermentum augue in nulla cursus non fermentum lorem semper. Quisque eu auctor lacus. Donec justo justo, mollis vel tempor vitae, consequat eget velit.</p>
+
+							<p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+
+							<h3>Adipiscing risus </h3>
+							<p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+
+							<p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+
+							<p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+
+							<h3>Adipiscing risus </h3>
+							<p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+
+							<p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+						</div>
+					</div>
+				</div>
+
+				<script type="text/javascript">
+					$( '.scrollbar-2' ).scrollbar( {
+						$viewport: $( '.scrollbar-2-viewport' ),
+						$contents: $( '.scrollbar-2-contents' ),
+						customClass: 'scrollbar-2',
+						axis: 'x',
+						create: function( ) {
+							$( '.section-2 span.ststus-display' ).text( 'create' );
+						},
+						active: function( ) {
+							$( '.section-2 span.ststus-display' ).text( 'scroll' );
+						},
+						update: function( ) {
+							$( '.section-2 span.ststus-display' ).text( 'update' );
+						}
+					} );
+
+					// contents update
+					setTimeout( function( ) {
+						var $e = $( '<p>add contents!</p>' ),
+							len = 10,
+							i = 0;
+
+						// make contents
+						for ( i = 0; i < len; i++ ) {
+							$( '.scrollbar-2-contents' ).append( $e.clone( ) );
+						}
+
+						$( '.scrollbar-2' ).scrollbar2update( );
+					}, 5 * 1000 );
+				</script>
+			</section>
+
+			<!-- Vertical -->
+			<section class="section-3">
+				<header>
+					<h1>Vertical</h1>
+					<h2>status: <span class="ststus-display"></span></h2>
+				</header>
+
+				<section class="scrollbar-3">
+					<div class="scrollbar-3-viewport">
+						<div class="scrollbar-3-contents">
+							<h3>Magnis dis parturient montes</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae velit at velit pretium sodales. Maecenas egestas imperdiet mauris, vel elementum turpis iaculis eu. Duis egestas augue quis ante ornare eu tincidunt magna interdum. Vestibulum posuere risus non ipsum sollicitudin quis viverra ante feugiat. Pellentesque non faucibus lorem. Nunc tincidunt diam nec risus ornare quis porttitor enim pretium. Ut adipiscing tempor massa, a ullamcorper massa bibendum at. Suspendisse potenti. In vestibulum enim orci, nec consequat turpis. Suspendisse sit amet tellus a quam volutpat porta. Mauris ornare augue ut diam tincidunt elementum. Vivamus commodo dapibus est, a gravida lorem pharetra eu. Maecenas ultrices cursus tellus sed congue. Cras nec nulla erat.</p>
+
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget mauris libero. Nulla sit amet felis in sem posuere laoreet ut quis elit. Aenean mauris massa, pretium non bibendum eget, elementum sed nibh. Nulla ac felis et purus adipiscing rutrum. Pellentesque a bibendum sapien. Vivamus erat quam, gravida sed ultricies ac, scelerisque sed velit. Integer mollis urna sit amet ligula aliquam ac sodales arcu euismod. Fusce fermentum augue in nulla cursus non fermentum lorem semper. Quisque eu auctor lacus. Donec justo justo, mollis vel tempor vitae, consequat eget velit.</p>
+
+							<p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+
+							<h3>Adipiscing risus </h3>
+							<p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+
+							<p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+
+							<p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+
+							<h3>Adipiscing risus </h3>
+							<p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+
+							<p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+						</div>
+					</div>
+				</section>
+
+				<script type="text/javascript">
+					var $b1 = $( '.section-3' ),
+						$s1 = $b1.find( ".scrollbar-3" ),
+						$v1 = $b1.find( ".scrollbar-3-viewport" ),
+						$c1 = $b1.find( ".scrollbar-3-contents" );
+
+					var a1 = new Scrollbar( {
+						wrapping: $s1.get( 0 ),
+						viewport: $v1.get( 0 ),
+						contents: $c1.get( 0 ),
+						customClass: 'scrollbar-3',
+						create: function( ) {
+							$b1.find( 'span.ststus-display' ).text( 'create' );
+						},
+						active: function( ) {
+							$b1.find( 'span.ststus-display' ).text( 'scroll' );
+						},
+						update: function( ) {
+							$b1.find( 'span.ststus-display' ).text( 'update' );
+						}
+					} );
+
+					// contents update
+					setTimeout( function( ) {
+						var $e = $( '<p>add contents!</p>' ),
+							len = 10,
+							i = 0;
+
+						// make contents
+						for ( i = 0; i < len; i++ ) {
+							$c1.append( $e.clone( ) );
+						}
+
+						a1.update( );
+					}, 5 * 1000 );
+				</script>
+			</section>
+			<!-- -->
+
+		</div>
+		<!-- example // -->
+
+		<!-- use -->
+		<div class="use wrap">
+			<header>
+				<h1>How to Use</h1>
+			</header>
+
+			<section>
+				<header>
+					<h1>Method</h1>
+				</header>
+
+				<table summary="Method table">
+					<colgroup>
+						<col width="30%" />
+						<col width="70%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">update</th>
+							<td>내용 업데이트</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<header>
+					<h1>jQuery Option</h1>
+				</header>
+
+				<table summary="Option table">
+					<colgroup>
+						<col width="30%" />
+						<col width="70%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">$wrapping</th>
+							<td>
+								<span class="type"><em>Type</em>: jQuery Selector (default: $( this ))</span>
+							</td>
+						</tr>
+						<tr>
+							<td>전체 감쌈</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">$viewport</th>
+							<td>
+								<span class="type"><em>Type</em>: jQuery Selector (default: $( this ).find( '>[class$="viewport"]' ))</span>
+							</td>
+						</tr>
+						<tr>
+							<td>보이는 영역</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">$contents</th>
+							<td>
+								<span class="type"><em>Type</em>: jQuery Selector (default: $( this ).find( '>[class$="contents"]' ))</span>
+							</td>
+						</tr>
+						<tr>
+							<td>내용 영역</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<header>
+					<h1>Javascript Option</h1>
+				</header>
+
+				<table summary="Option table">
+					<colgroup>
+						<col width="30%" />
+						<col width="70%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">wrapping</th>
+							<td>
+								<em class="required">required.</em>
+								<span class="type"><em>Type</em>: elements (default: null)</span>
+							</td>
+						</tr>
+						<tr>
+							<td>전체 감쌈</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">viewport</th>
+							<td>
+								<em class="required">required.</em>
+								<span class="type"><em>Type</em>: elements (default: null)</span>
+							</td>
+						</tr>
+						<tr>
+							<td>보이는 영역</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">contents</th>
+							<td>
+								<em class="required">required.</em>
+								<span class="type"><em>Type</em>: elements (default: null)</span>
+							</td>
+						</tr>
+						<tr>
+							<td>내용 영역</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<header>
+					<h1>Common Option</h1>
+				</header>
+
+				<table summary="Option table">
+					<colgroup>
+						<col width="30%" />
+						<col width="70%" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" rowspan="2">axis</th>
+							<td><span class="type"><em>Type</em>: String (default: 'y')</span></td>
+						</tr>
+						<tr>
+							<td>스크롤이 생성될 축</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">wheel</th>
+							<td><span class="type"><em>Type</em>: Integer (default: 40)</span></td>
+						</tr>
+						<tr>
+							<td>마우스 휠로 스크롤할 시 스크롤바 움직일 정도</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">customClass</th>
+							<td><span class="type"><em>Type</em>: String (default: 'customClass')</span></td>
+						</tr>
+						<tr>
+							<td>사용자 클래스</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">appendButton</th>
+							<td><span class="type"><em>Type</em>: Boolean(default: true)</span></td>
+						</tr>
+						<tr>
+							<td>상/하 스크롤바 버튼 사용 여부, 혹은 좌/우</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">create</th>
+							<td><span class="type"><em>Type</em>: Function(default: null)</span></td>
+						</tr>
+						<tr>
+							<td>생성시 콜백 함수</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">update</th>
+							<td><span class="type"><em>Type</em>: Function(default: null)</span></td>
+						</tr>
+						<tr>
+							<td>업데이트 후 콜백 함수</td>
+						</tr>
+
+						<tr>
+							<th scope="row" rowspan="2">active</th>
+							<td><span class="type"><em>Type</em>: Function(default: null)</span></td>
+						</tr>
+						<tr>
+							<td>스크롤 후 콜백함수</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</div>
+		<!-- use // -->
+
+	</main>
+
+	<footer class="wrap-footer">
+		<address>copyright <a href="http://blim.mit-license.org/" target="_blank">http://blim.mit-license.org/</a></address>
+	</footer>
+</body>
+</html>
