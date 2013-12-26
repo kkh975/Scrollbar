@@ -4,7 +4,7 @@ Scrollbar
 ##Introduce
 기본에 충실한 스크롤바 플러그인입니다. 현재 IE7까지 확인되었습니다.
 
-##How to Uas
+##How to Use
 ####HTML
 아래와 같이 감싸는 태그와 보일 영역의 태그, 그리고 내용 태그로 작성합니다.
 ```html
