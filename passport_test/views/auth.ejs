@@ -5,13 +5,12 @@
 </head>
 <body>
 
-<p>index is ...</p>
+<p>auth is ...</p>
 
-<a href="/auth/facebook">facebook login</a>
+<a href="/logout">logout</a>
 
 <% if (user) { %>
-  <a href="/logout">logout</a>
-  <%= user %>
+  <%= user._json %>
   <hr>
   is: <%= isauth %>
 <% } %>

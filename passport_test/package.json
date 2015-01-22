@@ -16,6 +16,9 @@
     "morgan": "~1.5.1",
     "passport": "^0.2.1",
     "passport-facebook": "^1.0.3",
+    "passport-google": "^0.3.0",
+    "passport-kakao": "0.0.2",
+    "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.2",
     "serve-favicon": "~2.2.0"
   }

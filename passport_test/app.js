@@ -34,6 +34,8 @@ app.use(session({
 // passport load
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook').Strategy;
+var GoogleStrategy = require('passport-google').Strategy;
+var KakaoStrategy = require('passport-kakao').Strategy;
 
 // passport use
 app.use(passport.initialize());
@@ -43,7 +45,8 @@ app.use(passport.session());
 passport.use( new FacebookStrategy({
     clientID: '493065400723583',
     clientSecret: '8b5dedfc560653fccb60341f685eca7f',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback'
+    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    scope: ["email", "user_birthday", "user_location", "user_photos"]
 }, function( accessToken, refreshToken, profile, done ){
     console.log( '+ facebook info ======' );
     console.log( accessToken );
@@ -54,28 +57,54 @@ passport.use( new FacebookStrategy({
     return done( null, profile );
 }));
 
+/*passport.use( new GoogleStrategy({
+    clientID: '493065400723583',
+    clientSecret: '8b5dedfc560653fccb60341f685eca7f',
+    returnURL: 'http://localhost:3000/'
+}, function( accessToken, refreshToken, profile, done ){
+    console.log( '+ facebook info ======' );
+    console.log( accessToken );
+    console.log( refreshToken )o;
+    console.log( profile );
+
+    // done 메서드에 전달된 정보가 세션에 저장    
+    return done( null, profile );
+}));*/
+
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+  done(null, user);
+});
+
 
 app.get( '/', function( req, res ){
-    console.log( '--- main facebook ---' );  
-    console.log( '+ session: ======' );
+    console.log( '+ index session: ======' );
     console.log( req.session );
 
     res.render( 'index', {
-        user: req.session.passport.user || {}
+        user: req.session.passport.user || null,
+        isauth: req.isAuthenticated() 
     });
 });
 
-app.get( '/auth/facebook', passport.authenticate('facebook'), function( req, res ){
+app.get( '/auth/facebook', passport.authenticate('facebook',{
+  failureRedirect: '/#!/auth/facebook/failure'
+}), function( req, res ){
     console.log( '--- to facebook ---' );
 });
 
-app.get( '/auth/facebook/callback', function( req, res ){
-    console.log( '--- callback facebook ---' );  
-    console.log( '+ session: ======' );
+app.get( '/auth/facebook/callback', passport.authenticate('facebook',{
+  failureRedirect: '/#!/auth/facebook/callback/failure'
+}), function( req, res ){
+    console.log( '+ callback session: ======' );
     console.log( req.session.passport );
 
-    res.render( 'index', {
-        user: req.session.passport.user || {}
+    res.render( 'auth', {
+        user: req.session.passport.user || null,
+        isauth: req.isAuthenticated() 
     });
 });
 
