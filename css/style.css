@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /**
- * @date 2013-07-04
  * @author Koo Chi Hoon(SK MNS)
  */
 
@@ -12,34 +11,15 @@ section, footer, address, main, header { display: block; }
 
 /* header */
 header.wrap-header {
-	padding: 10px 20px;
-	border-bottom: 1px solid #e5e5e5;
+	margin-top:20px;
+	width: 96%;
+	padding: 0px 2%;
 }
 header.wrap-header h1 {
-	letter-spacing: -1px;
-	font-size: 24px;
+	font-size:30px; 
 }
 header.wrap-header p {
-	margin-top: 10px;
-	line-height: 135%;
-}
-header.wrap-header p.nth-2 img {
-    width: 25px;
-	margin-top: 5px;
-	margin-right: 3px;
-}
-header.wrap-header a {
-	position: absolute;
-	top: 20px;
-}
-header.wrap-header a img {
-	border: 0px;
-}
-header.wrap-header a.to-en {
-	right: 40px;
-}
-header.wrap-header a.to-kr {
-	right: 20px;
+	margin-top:10px;
 }
 
 /* footer */
@@ -58,7 +38,7 @@ footer.wrap-footer address a {
 
 .wrap {
 	float: left;
-	width: 46%;
+	width: 96%;
 	margin: 0px 2%;
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -97,24 +77,22 @@ footer.wrap-footer address a {
 .ex {
 	text-align: center;
 }
-.use {
-}
 
 /* Vertical */
 .scrollbar-1 {
-	width: 100%; /* You must have a attribute! */
-	height: 250px; /* You must have a attribute! */
+	width: 100%; /* required */
+	height: 250px; /* required */
 	margin-top: 20px;
 }
 .scrollbar-1-viewport {
-	width: 100%; /* You must have a attribute! */
-	height: 248px; /* You must have a attribute! */
+	width: 100%; /* required */
+	height: 248px; /* required */
 	border: 1px solid #e5e5e5;
 }
 .scrollbar-1-contents {
 	overflow: hidden;
 	padding: 15px;
-	margin-right: 30px; /* You must have a attribute! */
+	margin-right: 30px; /* required */
 	text-align: left;
 }
 .scrollbar-1-contents h3 {
@@ -127,48 +105,48 @@ footer.wrap-footer address a {
 	margin-bottom: 10px;
 }
 .scrollbar-1-scrollbar {
-	top: 1px; /* You must have a attribute! */
-	right: -1px; /* You must have a attribute! */
-	width: 15px; /* You must have a attribute! */
+	top: 1px; /* required */
+	right: -1px; /* required */
+	width: 15px; /* required */
 }
 .scrollbar-1-track {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #e5e5e5;
 }
 .scrollbar-1-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #ccc;
 	cursor: pointer;
 }
 .scrollbar-1-first-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #b3b3b3;
 }
 .scrollbar-1-end-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #b3b3b3;
 }
 
 /* Horizontal */
 .scrollbar-2 {
-	width: 100%; /* You must have a attribute! */
-	height: 250px; /* You must have a attribute! */
+	width: 100%; /* required */
+	height: 250px; /* required */
 	margin-top: 20px;
 }
 .scrollbar-2-viewport {
-	width: 100%; /* You must have a attribute! */
-	height: 248px; /* You must have a attribute! */
+	width: 100%; /* required */
+	height: 248px; /* required */
 	border: 1px solid #e5e5e5;
 }
 .scrollbar-2-contents {
 	overflow: hidden;
 	width: 2000%;
 	padding: 15px;
-	padding-bottom: 30px; /* You must have a attribute! */
+	padding-bottom: 30px; /* required */
 	text-align: left;
 }
 .scrollbar-2-contents h3 {
@@ -182,47 +160,47 @@ footer.wrap-footer address a {
 	margin-top: 5px;
 }
 .scrollbar-2-scrollbar {
-	bottom: -1px; /* You must have a attribute! */
-	left: 1px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	bottom: -1px; /* required */
+	left: 1px; /* required */
+	height: 15px; /* required */
 }
 .scrollbar-2-track {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #e5e5e5;
 }
 .scrollbar-2-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #ccc;
 	cursor: pointer;
 }
 .scrollbar-2-first-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #b3b3b3;
 }
 .scrollbar-2-end-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #b3b3b3;
 }
 
 /* Vertical */
 .scrollbar-3 {
-	width: 100%; /* You must have a attribute! */
-	height: 250px; /* You must have a attribute! */
+	width: 100%; /* required */
+	height: 250px; /* required */
 	margin-top: 20px;
 }
 .scrollbar-3-viewport {
-	width: 100%; /* You must have a attribute! */
-	height: 248px; /* You must have a attribute! */
+	width: 100%; /* required */
+	height: 248px; /* required */
 	border: 1px solid #e5e5e5;
 }
 .scrollbar-3-contents {
 	overflow: hidden;
 	padding: 15px;
-	margin-right: 30px; /* You must have a attribute! */
+	margin-right: 30px; /* required */
 	text-align: left;
 }
 .scrollbar-3-contents h3 {
@@ -235,59 +213,28 @@ footer.wrap-footer address a {
 	margin-bottom: 10px;
 }
 .scrollbar-3-scrollbar {
-	top: 1px; /* You must have a attribute! */
-	right: -1px; /* You must have a attribute! */
-	width: 15px; /* You must have a attribute! */
+	top: 1px; /* required */
+	right: -1px; /* required */
+	width: 15px; /* required */
 }
 .scrollbar-3-track {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #e5e5e5;
 }
 .scrollbar-3-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #ccc;
 	cursor: pointer;
 }
 .scrollbar-3-first-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #b3b3b3;
 }
 .scrollbar-3-end-thumb {
-	width: 15px; /* You must have a attribute! */
-	height: 15px; /* You must have a attribute! */
+	width: 15px; /* required */
+	height: 15px; /* required */
 	background: #b3b3b3;
-}
-
-.use table {
-	width: 100%;
-	margin-top: 5px;
-	table-layout: fixed;
-	border-collapse: collapse;
-	border-top: 1px solid #e5e5e5;
-	border-left: 1px solid #e5e5e5;
-	word-break: break-all;
-	font-size: 12px;
-}
-.use table th,
-.use table td {
-	padding: 10px 0;
-	padding-left: 10px;
-	border-bottom: 1px solid #e5e5e5;
-	border-right: 1px solid #e5e5e5;
-	text-align: left;
-}
-.use table th {
-	background: #f7f7f7;
-}
-.use table td {
-	background: #fff;
-}
-.use table em.required {
-	color: #d61d1d;
-}
-.use table span.type {
-	color: #9a9a9a;
 }

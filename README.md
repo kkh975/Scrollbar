@@ -2,7 +2,9 @@ Scrollbar
 =========
 
 ##Introduce
-기본에 충실한 스크롤바 플러그인입니다. 현재 IE7까지 확인되었습니다.
+웹브라우저에서 사용되는 기본 스크롤바입니다.
+
+[Demo](https://kkh975.github.io/SwipeBase)
 
 ##How to Use
 ####HTML
@@ -18,7 +20,7 @@ Scrollbar
 ```
 
 ####CSS
-전체 감싸는 태그와 내용 감싸는 태그는 반드시 가로, 세로 길이를 몇시하여야 합니다. 
+전체 감싸는 태그와 내용 감싸는 태그는 반드시 가로, 세로 길이를 명시하여야 합니다. 
 다만 세로 길이를 퍼센트로 명시할 경우 화면에서 보이지 않을 수 있습니다.
 한가지 주의할 점은, Javascript로 생성된 클래스(기본:  customClass)를 중심으로 작성하여 합니다.
 ```css
@@ -97,4 +99,5 @@ new Scrollbar( {
 Copyrights
 ----------
 - license: http://blim.mit-license.org/
+- site: http://www.blim.co.kr/
 - email: kkh975@naver.com
