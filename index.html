@@ -61,33 +61,33 @@
 				</section>
 
 				<script type="text/javascript">
-					$( '.scrollbar-1' ).scrollbar( {
+					$( '.scrollbar-1' ).scrollbar()
 						$viewport: $( '.scrollbar-1-viewport' ),
 						$contents: $( '.scrollbar-1-contents' ),
 						customClass: 'scrollbar-1',
-						create: function( ) {
+						create: function(){
 							$( '.section-1 span.ststus-display' ).text( 'create' );
 						},
-						active: function( ) {
+						active: function(){
 							$( '.section-1 span.ststus-display' ).text( 'scroll' );
 						},
-						update: function( ) {
+						update: function(){
 							$( '.section-1 span.ststus-display' ).text( 'update' );
 						}
-					} );
+					});
 
 					// contents update
-					setTimeout( function( ) {
+					setTimeout( function(){
 						var $e = $( '<p>add contents!</p>' ),
 							len = 10,
 							i = 0;
 
 						// make contents
-						for ( i = 0; i < len; i++ ) {
-							$( '.scrollbar-1-contents' ).append( $e.clone( ) );
+						for ( i = 0; i < len; i++ ){
+							$( '.scrollbar-1-contents' ).append( $e.clone());
 						}
 
-						$( '.scrollbar-1' ).scrollbar2update( );
+						$( '.scrollbar-1' ).scrollbar2update();
 					}, 5 * 1000 );
 				</script>
 			</section>
@@ -95,7 +95,7 @@
 			<!-- Horizontal -->
 			<section class="section-2">
 				<header>
-					<h1>Horizontal</h1>
+					<h1>Horizontal + Ajax Update</h1>
 					<h2>status: <span class="ststus-display"></span></h2>
 				</header>
 
@@ -125,34 +125,34 @@
 				</div>
 
 				<script type="text/javascript">
-					$( '.scrollbar-2' ).scrollbar( {
+					$( '.scrollbar-2' ).scrollbar({
 						$viewport: $( '.scrollbar-2-viewport' ),
 						$contents: $( '.scrollbar-2-contents' ),
 						customClass: 'scrollbar-2',
 						axis: 'x',
-						create: function( ) {
+						create: function(){
 							$( '.section-2 span.ststus-display' ).text( 'create' );
 						},
-						active: function( ) {
+						active: function(){
 							$( '.section-2 span.ststus-display' ).text( 'scroll' );
 						},
-						update: function( ) {
+						update: function(){
 							$( '.section-2 span.ststus-display' ).text( 'update' );
 						}
-					} );
+					});
 
 					// contents update
-					setTimeout( function( ) {
+					setTimeout( function(){
 						var $e = $( '<p>add contents!</p>' ),
 							len = 10,
 							i = 0;
 
 						// make contents
-						for ( i = 0; i < len; i++ ) {
-							$( '.scrollbar-2-contents' ).append( $e.clone( ) );
+						for ( i = 0; i < len; i++ ){
+							$( '.scrollbar-2-contents' ).append( $e.clone());
 						}
 
-						$( '.scrollbar-2' ).scrollbar2update( );
+						$( '.scrollbar-2' ).scrollbar2update();
 					}, 5 * 1000 );
 				</script>
 			</section>
@@ -160,7 +160,7 @@
 			<!-- Vertical -->
 			<section class="section-3">
 				<header>
-					<h1>Vertical</h1>
+					<h1>Vertical + Ajax Update</h1>
 					<h2>status: <span class="ststus-display"></span></h2>
 				</header>
 
@@ -195,34 +195,34 @@
 						$v1 = $b1.find( ".scrollbar-3-viewport" ),
 						$c1 = $b1.find( ".scrollbar-3-contents" );
 
-					var a1 = new Scrollbar( {
+					var a1 = new Scrollbar({
 						wrapping: $s1.get( 0 ),
 						viewport: $v1.get( 0 ),
 						contents: $c1.get( 0 ),
 						customClass: 'scrollbar-3',
-						create: function( ) {
+						create: function(){
 							$b1.find( 'span.ststus-display' ).text( 'create' );
 						},
-						active: function( ) {
+						active: function(){
 							$b1.find( 'span.ststus-display' ).text( 'scroll' );
 						},
-						update: function( ) {
+						update: function(){
 							$b1.find( 'span.ststus-display' ).text( 'update' );
 						}
-					} );
+					});
 
 					// contents update
-					setTimeout( function( ) {
+					setTimeout( function(){
 						var $e = $( '<p>add contents!</p>' ),
 							len = 10,
 							i = 0;
 
 						// make contents
-						for ( i = 0; i < len; i++ ) {
-							$c1.append( $e.clone( ) );
+						for ( i = 0; i < len; i++ ){
+							$c1.append( $e.clone());
 						}
 
-						a1.update( );
+						a1.update();
 					}, 5 * 1000 );
 				</script>
 			</section>
